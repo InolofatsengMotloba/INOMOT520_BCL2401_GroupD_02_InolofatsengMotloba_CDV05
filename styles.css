@@ -1,0 +1,161 @@
+@import url(https://fonts.googleapis.com/css?family=Ubuntu);
+@import url(https://fonts.googleapis.com/css?family=PT+Sans);
+
+*,
+*:before,
+*:after {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* Custom Properties */
+:root {
+  --ff-primary: "PT Sans", sans-serif;
+  --ff-secondary: "Ubuntu", sans-serif;
+
+  --fw-reg: 300;
+  --fw-bold: 900;
+
+  --bgclr-1: whitesmoke;
+  --bgclr-2: rgb(145, 113, 119);
+
+  --txtclr-1: #fff;
+  /* --txtclr-2: #c2c2c2; */
+  --txtclr-2: #4d4d4da4;
+  --txtclr-4: #2d2d2d;
+
+  --fs-h1: 1.2em;
+  --fs-h2: 1.8em;
+  --fs-h3: 2em;
+  --fs-body: 2.5em;
+
+  --bs: 0.25em 0.25em 0.75em rgb(0, 0, 0, 0.25),
+    0.125em 0.125em 0.25em rgba(0, 0, 0, 0.15);
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  font-family: var(--ff-primary);
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* Navigation */
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+h2,
+h3,
+a {
+  color: var(--txtclr-4);
+}
+
+a {
+  text-decoration: none;
+}
+
+.logo {
+  margin: 0;
+  font-size: var(--ff-primary);
+}
+
+.main-nav {
+  margin-top: 5px;
+}
+
+.logo a,
+.main-nav a {
+  padding: 10px 15px;
+  text-transform: uppercase;
+  text-align: center;
+  display: block;
+}
+
+.main-nav a {
+  color: var(--txtclr-2);
+  font-size: 0.99em;
+}
+
+.main-nav a:hover {
+  color: var(--txtclr-4);
+}
+
+.header {
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+  background-color: var(--bgclr-1);
+  box-shadow: 0px 0px 14px 0px rgba(0, 0, 0, 0.75);
+}
+
+/* ================================= 
+  Media Queries
+==================================== */
+
+@media (min-width: 769px) {
+  .header,
+  .main-nav {
+    display: flex;
+  }
+  .header {
+    flex-direction: column;
+    align-items: center;
+    .header {
+      width: 80%;
+      margin: 0 auto;
+      max-width: 1150px;
+    }
+  }
+}
+
+@media (min-width: 1025px) {
+  .header {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+/* About Self Section */
+.about-myself {
+  background: var(--bgclr-1);
+  border-top: 5px solid var(--bgclr-1);
+  text-align: center;
+  padding: 50px 0;
+}
+
+.img-profile {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  border: 5px solid var(--bgclr-1);
+}
+
+h2 {
+  color: var(--txtclr-2);
+  margin-top: 60px;
+  font-size: var(--fs-h3);
+  margin-bottom: 20px;
+  text-align: center;
+  display: inline-block;
+}
+
+.presentation {
+  color: #848484;
+  max-width: 1000px;
+  margin: auto;
+  padding: 10px 20px;
+  font-size: var(--fs-h1);
+  text-align: center;
+}
