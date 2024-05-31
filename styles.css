@@ -25,7 +25,7 @@
   --txtclr-1: #fff;
   /* --txtclr-2: #c2c2c2; */
   --txtclr-2: #4d4d4da4;
-  --txtclr-4: #2d2d2d;
+  --txtclr-3: #2d2d2d;
 
   --fs-h1: 1.2em;
   --fs-h2: 1.8em;
@@ -36,6 +36,7 @@
     0.125em 0.125em 0.25em rgba(0, 0, 0, 0.15);
 }
 
+/* General styles */
 html,
 body {
   width: 100%;
@@ -60,6 +61,7 @@ a {
 
 a {
   text-decoration: none;
+  
 }
 
 .logo {
@@ -120,6 +122,29 @@ a {
     flex-direction: row;
     justify-content: space-between;
   }
+}
+
+/* Home Page Section */
+.my-heading {
+  background-color: var(--bgclr-1);
+  background-image: url("images/flowers2.jpg");
+  background-size: cover;
+  background-blend-mode: multiply;
+  color: var(--txtclr-1);
+  text-align: center;
+}
+
+.section__title--heading {
+  color: var(--clr-accent);
+  position: relative;
+}
+
+.section__title--heading::after {
+    content: '';
+    display: block;
+    width: 2em;
+    height: 1px;
+    margin: 0.5em auto 1em;
 }
 
 /* About Self Section */
