@@ -174,6 +174,11 @@ a {
   border: 5px solid var(--bgclr-1);
 }
 
+.hidden {
+  opacity: 0;
+  visibility: hidden;
+}
+
 h2 {
   color: var(--txtclr-2);
   margin-top: 60px;
