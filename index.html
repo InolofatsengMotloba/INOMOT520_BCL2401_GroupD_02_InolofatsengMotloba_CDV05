@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio Website</title>
     <link rel="stylesheet" href="styles.css" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="script.js"></script>
   </head>
   <body>
     <!-- Home Section -->
@@ -33,21 +35,22 @@
 
     <!-- About Me Section -->
     <section class="about-myself" id="AboutSelf">
-      <img class="img-profile" src="images/aboutme.jpg" />
-      <h2>About me</h2>
-      <p class="presentation">
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis
-        dolore voluptas accusantium vero adipisci. Ab, officiis, molestiae. Quam
-        ad enim accusantium mollitia delectus nesciunt laboriosam hic adipisci
-        commodi perferendis similique minus perspiciatis numquam est impedit
-        quasi deleniti odio, ex aliquid ut sunt maxime, alias natus. Saepe
-        dolores pariatur aperiam placeat, distinctio vitae, iure labore qui
-        deleniti nemo assumenda dolore tenetur. A laboriosam aspernatur, ullam
-        magni quos soluta nam nemo, dolor optio ab fugit quas consequatur
-        voluptatem reiciendis, similique molestias adipisci delectus eaque
-        omnis, quisquam cum eligendi. Facere itaque ipsa, in ex a quam
-        necessitatibus totam neque dolorum esse cumque omnis.
-      </p>
+      <div>
+        <img class="img-profile" src="images/aboutme.jpg" />
+        <h2>About me</h2>
+        <p class="presentation">
+          Inolofatseng is a 21-year-old, willing to contribute to the growth of
+          this world with her exceptional skills by achieving and exceeding
+          goals given to her Through her educational years, she has developed a
+          good eye for design and attention to detail and therefore able to
+          apply them to her work.
+        </p>
+        <p class="presentation">
+          With a passion for web development and a solid background in React.js,
+          I'm thrilled about the chance to contribute to advancing the world
+          through innovative technology solutions.
+        </p>
+      </div>
     </section>
 
     <!-- Skills Section -->
@@ -142,9 +145,32 @@
     </section>
 
     <!-- Footer Section -->
-    <section id="Contact">
-      <!-- Contacts Section -->
-      <div></div>
-    </section>
+    <!-- Contacts Section -->
+    <footer class="footer">
+      <h2 class="section__title section__title--services">CONTACT ME</h2>
+      <a href="mailto:motlobainolo123@gmail.com" class="footer__link"
+        >motlobainolo123@gmail.com</a
+      >
+      <ul class="social-list">
+        <li class="social-list__item">
+          <a
+            class="social-list__link"
+            href="https://github.com/InolofatsengMotloba"
+          >
+            <i class="fab fa-github"></i>
+          </a>
+        </li>
+
+        <li class="social-list__item">
+          <a
+            class="social-list__link"
+            href="https://codepen.io/Inolofatseng-Motloba"
+          >
+            <i class="fab fa-codepen"></i>
+          </a>
+        </li>
+      </ul>
+    </footer>
+    <div></div>
   </body>
 </html>
