@@ -195,53 +195,51 @@ h2 {
 /* Skills Section */
 
 .my-services {
-    background-color: var(--txtclr-1);
-    background-image: url("images/flowers2.jpg");
-    background-size: cover;
-    background-blend-mode: multiply;
-    color: white;
-    text-align: center;
-    margin-bottom: 0;
-    padding-bottom: 50px;
+  background-color: var(--txtclr-1);
+  background-image: url("images/flowers2.jpg");
+  background-size: cover;
+  background-blend-mode: multiply;
+  color: white;
+  text-align: center;
+  margin-bottom: 0;
+  padding-bottom: 50px;
 }
 
 .section__title--services {
-    color: white;
-    position: relative;
-
+  color: white;
+  position: relative;
 }
 
 .section__title--services::after {
-    content: '';
-    display: block;
-    width: 2em;
-    height: 1px;
-    margin: 0.5em auto 1em;
-    background: var(--clr-light);
-    opacity: 0.25
+  content: "";
+  display: block;
+  width: 2em;
+  height: 1px;
+  margin: 0.5em auto 1em;
+  background: var(--clr-light);
+  opacity: 0.25;
 }
 
 .services {
-    margin-bottom: 0;
+  margin-bottom: 0;
 }
 
 .service {
-    max-width: 500px;
-    margin: 0 auto;
+  max-width: 500px;
+  margin: 0 auto;
 }
 
 @media (min-width: 800px) {
-    .services {
-        display: flex;
-        max-width: 1000px;
-        margin-left: auto;
-        margin-right: auto;
-    }
+  .services {
+    display: flex;
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+  }
 
-    .service + .service {
-        margin-left: 2em;
-
-    }
+  .service + .service {
+    margin-left: 2em;
+  }
 }
 
 /* Projects Section */
@@ -328,65 +326,53 @@ img {
 
 /* Footer with Contact Section */
 .footer {
-    background: var(--bgclr-1);
-    color: var(--txtclr-3);
-    text-align: center;
-    padding: 2.5em 0;
-    font-size: var(--fs-h3);
+  background: var(--bgclr-1);
+  color: var(--txtclr-3);
+  text-align: center;
+  padding-bottom: 2.5em;
+  font-size: 20px;
 }
 
-.footer a { 
-    color: inherit;
-    text-decoration: none;
+.contact-me {
+  text-align: center;
+  color: black;
+  margin-bottom: 1em;
+}
+
+.footer a {
+  color: inherit;
+  text-decoration: none;
 }
 
 .footer__link {
-    font-weight: var(--fw-bold);
+  font-weight: var(--fw-bold);
+  display: block;
+  margin-bottom: 1em;
 }
 
 .footer__link:hover,
 .social-list__link:hover {
-    opacity: .7;
+  opacity: 0.7;
 }
 
 .footer__link:hover {
-    text-decoration: underline;  
+  text-decoration: underline;
 }
 
 .social-list {
-    list-style: none;
-    display: flex;
-    justify-content: center;
-    margin: 2em 0 0;
-    padding: 0;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  margin: 2em 0 0;
+  padding: 0;
 }
 
 .social-list__item {
-    margin: 0 .5em;
+  margin: 0 0.5em;
 }
 
 .social-list__link {
-    padding: .5em;
-}
-
-.section__title {
-    margin-bottom: .25em;
-}
-
-.section__title--services {
-    color: var(--clr-accent);
-    position: relative;
-
-}
-
-.section__title--services::after {
-    content: '';
-    display: block;
-    width: 2em;
-    height: 1px;
-    margin: 0.5em auto 1em;
-    background: var(--clr-light);
-    opacity: 0.25;
+  padding: 0.5em;
 }
 
 .clear {
