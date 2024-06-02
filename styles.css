@@ -134,17 +134,24 @@ a {
   height: 725px; /* Set height to 200px */
 }
 
-.section__title--heading {
-  color: var(--clr-accent);
+.section_intro {
+  color: var(--txtclr-1);
   position: relative;
+  font-size: 50px;
+  padding-top: 40px;
 }
 
-.section__title--heading::after {
-  content: "";
-  display: block;
-  width: 2em;
-  height: 1px;
-  margin: 0.5em auto 1em;
+.heading-name {
+  color: var(--txtclr-1);
+  position: relative;
+  font-size: 80px;
+  padding-top: 20px;
+}
+
+.heading-position {
+  color: var(--txtclr-1);
+  position: relative;
+  font-size: 40px;
 }
 
 /* About Self Section */
